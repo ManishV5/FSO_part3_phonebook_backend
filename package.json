@@ -7,7 +7,8 @@
     "dev": "node --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -r dist && cd /Users/manishbhagat/Developer/Personal/FSO/part2/phonebook && npm run build && cp -r dist /Users/manishbhagat/Developer/Personal/FSO/part3/phonebook",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
+    "lint": "eslint ."
   },
   "author": "Manish",
   "license": "ISC",
@@ -18,5 +19,12 @@
     "express": "^5.1.0",
     "mongoose": "^8.17.2",
     "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@stylistic/eslint-plugin-js": "^4.4.1",
+    "eslint": "^9.33.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.3.0"
   }
 }
